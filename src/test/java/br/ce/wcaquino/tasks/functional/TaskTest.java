@@ -98,8 +98,8 @@ public class TaskTest {
 			
 			//remover tarefa
 			driver.findElement(By.xpath("//a[@class='btn btn-outline-danger btn-sm']")).click();
-			String message2 = driver.findElement(By.id("message")).getText();
-			Assert.assertEquals("Success!",message2);
+			message = driver.findElement(By.id("message")).getText();
+			Assert.assertEquals("Success!",message);
 		}finally {
 			driver.quit();
 		}
